@@ -164,7 +164,7 @@ def main():
         # white-box attack
         print('pgd white-box attack')
         model = WideResNet(widen_factor=args.width).to(device)
-        #model = torch.nn.DataParallel(model).cuda()
+        model = torch.nn.DataParallel(model).cuda()
         model.load_state_dict(torch.load(args.model_path)['model_state_dict'])
 
         eval_adv_test_whitebox(model, device, test_loader)
