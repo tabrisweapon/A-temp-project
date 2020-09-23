@@ -1,4 +1,3 @@
-# Does Network Width Really Help Adversarial Robustness?
 
 Our implementation is based on the [official TRADES implementation](https://github.com/yaodongyu/TRADES), which is supported by the PyTorch library. Several minor changes are made, incluing checkpoint saving, tensorboard utilization, and package arrangement.
 
